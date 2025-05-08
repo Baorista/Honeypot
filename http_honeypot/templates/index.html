@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Trang chủ{% endblock %}
+
+{% block content %}
+    <h1 style="color: #2f3640; border-bottom: 2px solid #00a8ff; padding-bottom: 0.5rem;">📚 Danh sách bài viết</h1>
+    
+    <ul style="list-style: none; padding: 0;">
+        {% for post in posts %}
+            <li style="margin-bottom: 1rem;">
+                <a href="{{ url_for('post', post_id=post.id) }}" 
+                   style="display: block; padding: 1rem; background-color: #f0f0f0; 
+                          border-radius: 6px; text-decoration: none; color: #2f3640; 
+                          transition: background-color 0.3s;">
+                    {{ post.title }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

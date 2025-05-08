@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+    <h2 style="color: #2f3640; border-bottom: 2px solid #00a8ff; padding-bottom: 0.5rem;">👋 Xin chào, {{ username }}!</h2>
+
+    <div style="margin: 2rem 0;">
+        <form action="{{ url_for('search') }}" method="get" style="display: flex; gap: 1rem;">
+            <input type="text" name="q" placeholder="🔍 Tìm kiếm bài viết" 
+                   style="flex: 1; padding: 0.5rem; border: 1px solid #ccc; border-radius: 6px;">
+            <button type="submit" 
+                    style="padding: 0.5rem 1rem; background-color: #00a8ff; color: white; border: none; border-radius: 6px; cursor: pointer;">
+                Tìm
+            </button>
+        </form>
+    </div>
+
+    <div style="margin-top: 2rem;">
+        <a href="{{ url_for('upload_post') }}" 
+           style="display: inline-block; padding: 0.75rem 1.5rem; background-color: #4cd137; 
+                  color: white; text-decoration: none; border-radius: 6px;">
+            ✍️ Đăng bài mới
+        </a>
+    </div>
+{% endblock %}

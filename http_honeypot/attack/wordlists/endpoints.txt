@@ -1,0 +1,6 @@
+admin
+shell
+config.php
+robots.txt
+hidden
+api/user

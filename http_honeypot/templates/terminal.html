@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Web Terminal{% endblock %}
+
+{% block content %}
+<h3>💻 Web Terminal</h3>
+<form method="post">
+    $ <input name="command" style="width: 300px;">
+    <input type="submit" value="Run">
+</form>
+<pre>{{ output }}</pre>
+{% endblock %}

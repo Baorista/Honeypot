@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}File Browser{% endblock %}
+
+{% block content %}
+<h3>📁 File Browser</h3>
+<ul>
+    {% for file in files %}
+        <li><a href="{{ url_for('download_fake_file', filename=file) }}">{{ file }}</a></li>
+    {% endfor %}
+</ul>
+{% endblock %}

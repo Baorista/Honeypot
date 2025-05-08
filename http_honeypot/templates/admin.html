@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Panel{% endblock %}
+
+{% block content %}
+<h2>🔥 Welcome to Admin Panel</h2>
+<ul>
+    <li><a href="{{ url_for('user_manage') }}">👤 User Management</a></li>
+    <li><a href="{{ url_for('file_browser') }}">📁 File Browser</a></li>
+    <li><a href="{{ url_for('web_terminal') }}">💻 Web Terminal</a></li>
+</ul>
+{% endblock %}

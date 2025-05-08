@@ -1,0 +1,13 @@
+Client 192.168.253.136 attempted connection with username: username, password: password
+timestamp=2025-05-03 11:29:53 ip=192.168.253.136 username=username command="ls"
+timestamp=2025-05-03 11:29:56 ip=192.168.253.136 username=username command="whoami"
+Client 192.168.253.136 attempted connection with username: admin, password: admin123
+timestamp=2025-05-03 11:50:08 ip=192.168.253.136 username=admin command="exit"
+timestamp=2025-05-03 11:50:09 ip=192.168.253.136 username=admin command="quit"
+timestamp=2025-05-03 11:50:16 ip=192.168.253.136 username=admin command="quit"
+Client 192.168.253.136 attempted connection with username: honeypot, password: admin
+Client 192.168.253.136 attempted connection with username: admin, password: admin123
+Client 192.168.253.136 attempted connection with username: admin, password: admin123
+Client 192.168.253.136 attempted connection with username: admin, password: admin123
+Client 192.168.253.136 attempted connection with username: admin, password: admin123
+timestamp=2025-05-03 11:54:17 ip=192.168.253.136 username=admin command="exit"

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2025-05-03 12:11:16",
+  "brute_force": [
+    "192.168.1.14"
+  ],
+  "dir_traversal": [],
+  "pasv_scan": [],
+  "file_enum": [
+    "192.168.1.14"
+  ],
+  "mkdir_rmdir": [
+    "192.168.1.14"
+  ]
+}
