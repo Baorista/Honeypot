@@ -27,11 +27,11 @@ def main():
     choice = input("What do u want to run babe? <3: ").strip()
     processes = []
     if choice == "1":
-        run_ssh()
+        processes.append(run_ssh())
     elif choice =="2":
-        run_ftp()
+        processes.append(run_ftp())
     elif choice =="3":
-        run_http()
+        processes.append(run_http())
     elif choice =="4":
         processes.append(run_ssh())
         processes.append(run_ftp())
